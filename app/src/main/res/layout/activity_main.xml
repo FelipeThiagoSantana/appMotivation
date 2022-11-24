@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/Green"
+        android:id="@+id/emotion"
+        >
+
+        <ImageView
+            android:id="@+id/image_all"
+            android:src="@drawable/ic_all_inclusive"
+            android:layout_width="42dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/image_happy"
+            android:src="@drawable/ic_emotions"
+            android:layout_width="42dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            />
+        <ImageView
+            android:id="@+id/image_sunny"
+            android:src="@drawable/ic_sunny"
+            android:layout_width="42dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emotion"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ol_name"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+        android:fontFamily="@font/cabin"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/phrase"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <View
+        android:layout_width="164dp"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Text"
+        android:background="@color/Green"
+        />
+
+    <Button
+        android:id="@+id/buttonNewPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/White2"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"
+        android:backgroundTint="@color/Salman"
+        android:text="@string/nova_frase" />
+</RelativeLayout>

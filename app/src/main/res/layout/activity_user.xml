@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserActivity"
+    android:background="@color/Green">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Begin_Text"
+        android:textColor="@color/Grey"
+        android:fontFamily="@font/cabin"
+        android:textSize="32dp"
+
+        android:layout_marginTop="72dp"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/validationName"
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:textSize="26dp"
+        android:textColorHint="@color/Grey"
+        android:textAlignment="center"
+        android:fontFamily="@font/cabin"
+        android:layout_below="@+id/text"
+        android:hint="@string/digite_seu_nome"
+        />
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/White2"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"
+        android:backgroundTint="@color/Salman"
+        android:text="salvar"
+        />
+
+
+
+
+</RelativeLayout>
